@@ -15,19 +15,12 @@ import { loginReducer } from './store/login.reducer';
 
 import { AddTaskComponent } from './tasks/add-task/add-task.component';
 import { ListTasksComponent } from './tasks/list-tasks/list-tasks.component';
-import { ViejaComponent } from './juegos/vieja/vieja.component';
+
 import { environment } from '../environments/environment';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoTasksComponent } from './tasks/todo-tasks/todo-tasks.component';
 import { HttpClientModule } from '@angular/common/http';
-/* import { 
-  MatToolbarModule, 
-  //MatIconModule, 
-  //MatSidenavModule, 
-  //MatListModule, 
-  //MatButtonModule 
-} from  '@angular/material'; */
 
 
 localStorage.setItem('URL', 'https://localhost:44382/');
@@ -71,33 +64,25 @@ localStorage.setItem('URL', 'https://localhost:44382/');
   import { MatTooltipModule } from '@angular/material/tooltip';
   import { MatTreeModule } from '@angular/material/tree';
   import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { GeocercaGoogleComponent } from './geocerca-google/geocerca-google.component';
+
 
 import { AgmCoreModule } from '@agm/core';
 
 
 import { MenuComponent } from './menu/menu.component';
-import { ListaTioComponent } from './tio/lista-tio.component';
-import { NuevoTioComponent } from './tio/nuevo-tio.component';
-import { DetalleTioComponent } from './tio/detalle-tio.component';
-import { ActualizarTioComponent } from './tio/actualizar-tio.component';
-import { LoginUsuariosComponent } from './tio/login-usuarios/login-usuarios.component';
-import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-usuarios.component';
+
+import { TodoPlayListComponent } from './playlist/todo-playlist/todo-playlist.component';
+import { PlayListComponent } from './playlist/list-playlist/list-playlist.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     AddTaskComponent,
-    ViejaComponent,
     ListTasksComponent,
     TodoTasksComponent,
-    GeocercaGoogleComponent,
     MenuComponent,
-    ListaTioComponent,
-    NuevoTioComponent,
-    DetalleTioComponent,
-    LoginUsuariosComponent,
-    ActualizarTioComponent,
-    RegistrarUsuariosComponent
+    TodoPlayListComponent,
+    PlayListComponent
   ],
   imports: [
     
@@ -112,11 +97,6 @@ import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-u
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDZktO_JnnvrY4BnD2IyZo8PqNXiDTWP1w'
     }),
-    /* StoreModule.forRoot({
-      tasks: taskReducer,
-      users: userReducer,
-      login: loginReducer
-    }), */
     StoreModule.forRoot({
       tasks: taskReducer,
       users: userReducer,

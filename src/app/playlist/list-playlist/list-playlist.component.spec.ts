@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeocercaGoogleComponent } from './geocerca-google.component';
+import { PlayListComponent } from './list-playlist.component';
 
-describe('GeocercaGoogleComponent', () => {
-  let component: GeocercaGoogleComponent;
-  let fixture: ComponentFixture<GeocercaGoogleComponent>;
+describe('PlayListComponent', () => {
+  let component: PlayListComponent;
+  let fixture: ComponentFixture<PlayListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GeocercaGoogleComponent ]
+      declarations: [ PlayListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GeocercaGoogleComponent);
+    fixture = TestBed.createComponent(PlayListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

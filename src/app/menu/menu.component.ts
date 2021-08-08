@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 import { Tio } from '../models/tio';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { LoginUsuariosComponent } from '../tio/login-usuarios/login-usuarios.component';
+
 
 import { Location } from "@angular/common";
 
